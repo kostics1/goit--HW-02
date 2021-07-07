@@ -2,6 +2,7 @@
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
   --accent-color: #2196f3;
+  --first-color: #ffffff;
 }
 h1,
 h2,
@@ -119,6 +120,22 @@ body {
 }
 /* HERO */
 
+.hero {
+  position: absolute;
+  flex-grow: 1;
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/bg.jpg");
+  background-size: cover;
+  background-color: #757575;
+}
+
 .hero-title {
   font-family: var(--main-font);
   font-weight: 900;
@@ -157,6 +174,7 @@ body {
 .softscill {
 }
 .softscill-title {
+  margin-top: 94px;
   margin-bottom: 50px;
 }
 .softscill-item {
@@ -219,7 +237,7 @@ body {
   margin-left: 30px;
 }
 .comanda {
-  background-color: F5F4FA;
+  background-color: teal;
 }
 .comanda-title {
   margin-bottom: 50px;
@@ -236,13 +254,12 @@ body {
   color: #212121;
 }
 .comanda-menu {
-  display: flex;
-  flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
   flex-basis: calc((100% - 120px) / 4);
 }
 .comanda-item {
+  display: inline-block;
   margin-top: 30px;
   margin-left: 30px;
   font-family: Roboto;
@@ -257,6 +274,47 @@ body {
   color: #212121;
 }
 .comanda-img {
+  width: 270px;
+  height: 260px;
+}
+
+.comanda-menu {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: tomato;
+  margin-right: 30px;
+}
+.comanda-item-content {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.comanda-item-title {
+  margin-top: 30px;
+}
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+}
+.social-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: white;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  fill: var(--first-color);
+  background-color: var(--accent-color);
 }
 .footer {
   width: 1600px;
