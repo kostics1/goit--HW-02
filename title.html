@@ -55,6 +55,7 @@
 
 <section class="softscill section">
     <div class="container">
+        <h2 class="visually-hidden">Наши преимузества</h2>
 <ul class="softscill-menu list">
     <li class="softscill-item">
         <p class="softscill-subtitle">Внимание к деталям</p>
@@ -249,6 +250,32 @@
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button type="button" class="close-btn" data-modal-close>x</button>
+        <form action="#" class="modal-form">
+            <p class="modal-form-head">оставте свои данные, мы вам перезвоним</p>
+            <label class="modal-form-field">
+                Имя
+                <input type="text" class="modal-form-input" name="user-name" minlength="2" pattern="[a-zA-Zа-яйА-Я]" title="кирилица или латынь" required>
+
+            </label>
+            <label class="modal-form-field">
+                Телефон
+                <input type="tel" class="modal-form-input" name="user-name" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="096-000-00-00" required>
+            
+            </label>
+            <label class="modal-form-field">
+                Почта
+                <input type="text" class="modal-form-input" name="user-name">
+            
+            </label>
+            <label class="modal-form-field">
+                Коментарии
+                <textarea name="user-massege" class="modal-form-massege" placeholder="Ваше сообщение"></textarea>
+            
+            </label>
+            <input type="checkbox" class="modal-form-checkbox" id="accept-policy">
+            <label for="accept-policy" class="modal-form-checkbox-label">Соглашаюсь с рассылкой и принимаю <a href="#" class="modal-form-label-link">Условия договора</a></label>
+            <button type="submit" class="modal-form-btn">отправить</button>
+        </form>
     </div>
 </div>
     
